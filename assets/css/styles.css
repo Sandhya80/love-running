@@ -24,6 +24,9 @@ header {
     z-index: 99; 
     width: 100%;
     box-shadow: #3a3a3a 0px 2px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 /* header links */
 header a {
@@ -56,7 +59,25 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none; /* Initially hidden */
+    top: 100%
 }
+/* Show the nav when the menu is clicked */
+nav-toggle:checked ~ nav {
+    display: block;
+}
+nav-toggle {
+    display: none; /* Hide the checkbox */
+}
+nav-toggle-label {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #3a3a3a;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px #3a3a3a;
+}
+/* Hide the label when the menu is open */
 /* main content */
 main {
     background-color: lightblue ;
