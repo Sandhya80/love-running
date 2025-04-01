@@ -158,7 +158,16 @@ footer {
     font-style: italic;
   }
 
-  /*Media queries for responsive design (Tablets and larger- 768px and up)*/
+  /* Media query : large or landscape phones(576px and up) */
+  @media screen and (min-width: 576px) {
+    #photos{
+      column-count:2;
+      column-gap: 0;
+    }
+  }
+
+
+  /* Media queries for responsive design (Tablets and larger- 768px and up) */
   @media screen and (min-width: 768px) {
     /* header */
     nav {
@@ -189,3 +198,34 @@ footer {
         margin-top: 79px; /* Remove top margin on larger screens */
     }
     
+  @media screen and (min-width: 992px) {
+    #menu a:hover {
+      border-bottom: 1px solid #3a3aa3;
+      }
+    /* Gallery */
+    #photos{
+        column-count: 4;
+    }  
+  }
+
+  @media screen and (min-width: 1200px) {
+    #benifits{
+      display: flex;
+      flex-direction: row;
+    }      
+    #benifits-image{
+      order: 0;
+    }
+    #benifits-mental{
+      order:1;
+    }
+    #benifits>div{
+      flex: 1;
+    }
+    #benifits-mental{
+      align-self: flex-start;
+    }
+    #benefits-physical{
+      align-self: flex-end;
+    }
+  }
