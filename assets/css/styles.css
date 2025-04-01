@@ -62,13 +62,13 @@ nav {
     top: 100%
 }
 /* Show the nav when the menu is clicked */
-nav-toggle:checked ~ nav {
+.nav-toggle:checked ~ nav {
     display: block;
 }
-nav-toggle {
+.nav-toggle {
     display: none; /* Hide the checkbox */
 }
-nav-toggle-label {
+.nav-toggle-label {
     cursor: pointer;
     font-size: 2rem;
     color: #3a3a3a;
@@ -157,4 +157,26 @@ footer {
     font-weight: 900;
     font-style: italic;
   }
-  
+
+  /*Media queries for responsive design (Tablets and larger- 768px and up)*/
+  @media screen and (min-width: 768px) {
+    /* header */
+    nav {
+        display: block; /* Show the nav on larger screens */
+        position: relative; /* Change to relative positioning */
+        padding-right: 1rem; /* Add padding to the right */
+        box-shadow: none; /* Remove shadow on larger screens */
+        width: fit-content; /* Adjust width to fit content */
+    }
+        
+    }
+    #menu {
+        display: flex; /* Show the menu items in a row */
+    }
+    #menu > li {
+        padding-left: 1rem; /* Add padding to the left of each menu item */
+    } 
+    .nav-toggle-label {
+        display: none; /* Hide the label on larger screens */
+    } 
+    
