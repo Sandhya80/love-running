@@ -80,11 +80,17 @@ nav {
 /* Hide the label when the menu is open */
 /* main content */
 main {
-    background-color: lightblue ;
     /*Make the main content take up the remaining space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px; /* Adjusted to account for header height */
 }
+/* hero section */
+#hero {
+    background-image: url("../images/hero-image.webp") no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+}
+
 /* footer */
 #social-networks {
     text-align: center;
